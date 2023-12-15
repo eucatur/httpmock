@@ -1,0 +1,12 @@
+## Introdução
+Esse projeto é um fork de https://github.com/eucatur/httpmock. \
+Trouxemos para github da Eucatur para termos liberdade de alterações, correções e adaptações rápidas e caso necessário facilitar nas contribuições com o projeto original.
+
+## Instruções quanto às Branchs
+Esse projeto contém 2 Branchs principais
+* `v1:` Até o presente momento(2023-12-15 17:15:00) é a branch oficial do [projeto principal](https://github.com/eucatur/httpmock). Então caso haja alguma contribuição ao [projeto principal](https://github.com/eucatur/httpmock) tenha total conciência que está branch esteja com fork sincronizado e as as implementações parte dessa Branch para que a contribuição seja enviada ao respositório do [projeto principal](https://github.com/eucatur/httpmock).
+* `main:` Essa é a branch principal para utilização dentro do contexto da Eucatur para que os projetos possam sempre usar as dependências partindo deste respositório
+  * Então a instrução para manter esta branch(`main`) atualizada é que puxe uma branch de atualização a partir da branch do [projeto principal](https://github.com/eucatur/httpmock) e abra um PR para branch `main` que com isso a atualização será analisada pelos demais para avaliar o impacto da atualização.
+  * Caso necesside contribuir e a contribuição reflita para branch `main`, basta seguir com a branch de contribuição a partir da branch principal(`v1` - atualmente 2023-12-15 17:23:00) do [projeto principal](https://github.com/eucatur/httpmock) realizar os trâmites de aprovação da contribuição com o repositório principal. A contribuição sendo aprovada pelos responsáveis do repositório principal, sincronize o repositório da Eucatur, ou seja, este respositório. Repositório entando sincronizado com [projeto principal](https://github.com/eucatur/httpmock) sincronize com a branch `main` para que reflita a contribuição para os contextos da Eucatur.
+      * ### LEMBRE-SE! a branch `main` está com os pacotes apontando para namespace eucatur, ou seja, os modules apontandos para github.com/eucatur/httpmock
+        * Então, ao alinhar a [branch principal do projeto](https://github.com/eucatur/httpmock) com a branch do contexto eucatur(`main`) certifique-se que os pacotes continuam apontando para os módulos **github.com/eucatur/httpmock**

@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/jarcoal/httpmock/internal"
+	"github.com/eucatur/httpmock/internal"
 )
 
 const regexpPrefix = "=~"
@@ -989,8 +989,8 @@ func sortedQuery(m url.Values) string {
 // will abort the current test and print something like:
 //
 //	transport_test.go:735: Called from net/http.Get()
-//	      at /go/src/github.com/jarcoal/httpmock/transport_test.go:714
-//	    github.com/jarcoal/httpmock.TestCheckStackTracer()
+//	      at /go/src/github.com/eucatur/httpmock/transport_test.go:714
+//	    github.com/eucatur/httpmock.TestCheckStackTracer()
 //	      at /go/src/testing/testing.go:865
 //	    testing.tRunner()
 //	      at /go/src/runtime/asm_amd64.s:1337
@@ -1606,7 +1606,7 @@ func RegisterResponderWithQuery(method, path string, query any, responder Respon
 //
 //	import (
 //	  "testing"
-//	  "github.com/jarcoal/httpmock"
+//	  "github.com/eucatur/httpmock"
 //	)
 //	...
 //	func TestMyApp(t *testing.T) {
@@ -1618,8 +1618,8 @@ func RegisterResponderWithQuery(method, path string, query any, responder Respon
 // will abort the current test and print something like:
 //
 //	transport_test.go:735: Called from net/http.Get()
-//	      at /go/src/github.com/jarcoal/httpmock/transport_test.go:714
-//	    github.com/jarcoal/httpmock.TestCheckStackTracer()
+//	      at /go/src/github.com/eucatur/httpmock/transport_test.go:714
+//	    github.com/eucatur/httpmock.TestCheckStackTracer()
 //	      at /go/src/testing/testing.go:865
 //	    testing.tRunner()
 //	      at /go/src/runtime/asm_amd64.s:1337

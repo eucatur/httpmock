@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/jarcoal/httpmock/internal"
+	"github.com/eucatur/httpmock/internal"
 )
 
 var ignorePackages = map[string]bool{}

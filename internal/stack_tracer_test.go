@@ -7,7 +7,7 @@ import (
 
 	"github.com/maxatome/go-testdeep/td"
 
-	"github.com/jarcoal/httpmock/internal"
+	"github.com/eucatur/httpmock/internal"
 )
 
 func TestStackTracer(t *testing.T) {

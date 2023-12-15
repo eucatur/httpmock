@@ -1,6 +1,6 @@
-module github.com/jarcoal/httpmock
+module github.com/eucatur/httpmock
 
-go 1.18
+go 1.21
 
 require github.com/maxatome/go-testdeep v1.12.0
 

@@ -5,7 +5,7 @@ import (
 
 	"github.com/maxatome/go-testdeep/td"
 
-	"github.com/jarcoal/httpmock/internal"
+	"github.com/eucatur/httpmock/internal"
 )
 
 func TestRouteKey(t *testing.T) {

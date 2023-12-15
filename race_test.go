@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	. "github.com/jarcoal/httpmock"
+	. "github.com/eucatur/httpmock"
 )
 
 func TestActivateNonDefaultRace(t *testing.T) {
