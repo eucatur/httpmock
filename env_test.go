@@ -7,7 +7,7 @@ import (
 
 	"github.com/maxatome/go-testdeep/td"
 
-	"github.com/jarcoal/httpmock"
+	"github.com/eucatur/httpmock"
 )
 
 const envVarName = "GONOMOCKS"

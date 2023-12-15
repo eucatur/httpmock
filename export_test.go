@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"sync/atomic"
 
-	"github.com/jarcoal/httpmock/internal"
+	"github.com/eucatur/httpmock/internal"
 )
 
 var (

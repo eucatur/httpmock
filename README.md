@@ -1,4 +1,4 @@
-# httpmock [![Build Status](https://github.com/jarcoal/httpmock/workflows/Build/badge.svg?branch=v1)](https://github.com/jarcoal/httpmock/actions?query=workflow%3ABuild) [![Coverage Status](https://coveralls.io/repos/github/jarcoal/httpmock/badge.svg?branch=v1)](https://coveralls.io/github/jarcoal/httpmock?branch=v1) [![GoDoc](https://godoc.org/github.com/jarcoal/httpmock?status.svg)](https://godoc.org/github.com/jarcoal/httpmock) [![Version](https://img.shields.io/github/tag/jarcoal/httpmock.svg)](https://github.com/jarcoal/httpmock/releases) [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go/#testing)
+# httpmock [![Build Status](https://github.com/eucatur/httpmock/workflows/Build/badge.svg?branch=v1)](https://github.com/eucatur/httpmock/actions?query=workflow%3ABuild) [![Coverage Status](https://coveralls.io/repos/github/jarcoal/httpmock/badge.svg?branch=v1)](https://coveralls.io/github/jarcoal/httpmock?branch=v1) [![GoDoc](https://godoc.org/github.com/eucatur/httpmock?status.svg)](https://godoc.org/github.com/eucatur/httpmock) [![Version](https://img.shields.io/github/tag/jarcoal/httpmock.svg)](https://github.com/eucatur/httpmock/releases) [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go/#testing)
 
 Easy mocking of http responses from external resources.
 
@@ -10,12 +10,12 @@ Currently supports Go 1.13 to 1.21 and is regularly tested against tip.
 
 In your go files, simply use:
 ```go
-import "github.com/jarcoal/httpmock"
+import "github.com/eucatur/httpmock"
 ```
 
 Then next `go mod tidy` or `go test` invocation will automatically
 populate your `go.mod` with the latest httpmock release, now
-[![Version](https://img.shields.io/github/tag/jarcoal/httpmock.svg)](https://github.com/jarcoal/httpmock/releases).
+[![Version](https://img.shields.io/github/tag/jarcoal/httpmock.svg)](https://github.com/eucatur/httpmock/releases).
 
 
 ## Usage
@@ -129,7 +129,7 @@ in the same order, the first match stops the search.
 import (
   "testing"
 
-  "github.com/jarcoal/httpmock"
+  "github.com/eucatur/httpmock"
   "github.com/maxatome/go-testdeep/helpers/tdsuite"
   "github.com/maxatome/go-testdeep/td"
 )
@@ -172,7 +172,7 @@ func (s *MySuite) TestArticles(assert, require *td.T) {
 
 import (
   // ...
-  "github.com/jarcoal/httpmock"
+  "github.com/eucatur/httpmock"
 )
 // ...
 var _ = BeforeSuite(func() {
@@ -194,7 +194,7 @@ var _ = AfterSuite(func() {
 
 import (
   // ...
-  "github.com/jarcoal/httpmock"
+  "github.com/eucatur/httpmock"
 )
 
 var _ = Describe("Articles", func() {
@@ -213,7 +213,7 @@ var _ = Describe("Articles", func() {
 
 import (
   // ...
-  "github.com/jarcoal/httpmock"
+  "github.com/eucatur/httpmock"
   "github.com/go-resty/resty"
 )
 // ...
@@ -236,7 +236,7 @@ var _ = AfterSuite(func() {
 
 import (
   // ...
-  "github.com/jarcoal/httpmock"
+  "github.com/eucatur/httpmock"
   "github.com/go-resty/resty"
 )
 

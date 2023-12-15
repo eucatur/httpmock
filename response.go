@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jarcoal/httpmock/internal"
+	"github.com/eucatur/httpmock/internal"
 )
 
 // fromThenKeyType is used by Then().
@@ -62,7 +62,7 @@ func (r Responder) times(name string, n int, fn ...func(...any)) Responder {
 //
 //	import (
 //	  "testing"
-//	  "github.com/jarcoal/httpmock"
+//	  "github.com/eucatur/httpmock"
 //	)
 //	...
 //	func TestMyApp(t *testing.T) {
@@ -84,7 +84,7 @@ func (r Responder) Times(n int, fn ...func(...any)) Responder {
 //
 //	import (
 //	  "testing"
-//	  "github.com/jarcoal/httpmock"
+//	  "github.com/eucatur/httpmock"
 //	)
 //	...
 //	func TestMyApp(t *testing.T) {
@@ -105,7 +105,7 @@ func (r Responder) Once(fn ...func(...any)) Responder {
 //
 //	import (
 //	  "testing"
-//	  "github.com/jarcoal/httpmock"
+//	  "github.com/eucatur/httpmock"
 //	)
 //	...
 //	func TestMyApp(t *testing.T) {
@@ -129,7 +129,7 @@ func (r Responder) Trace(fn func(...any)) Responder {
 //	import (
 //	  "testing"
 //	  "time"
-//	  "github.com/jarcoal/httpmock"
+//	  "github.com/eucatur/httpmock"
 //	)
 //	...
 //	func TestMyApp(t *testing.T) {
@@ -411,7 +411,7 @@ func ResponderFromResponse(resp *http.Response) Responder {
 // dump the stack trace to localize the origin of the call.
 //
 //	import (
-//	  "github.com/jarcoal/httpmock"
+//	  "github.com/eucatur/httpmock"
 //	  "testing"
 //	)
 //	...
@@ -482,7 +482,7 @@ func NewErrorResponder(err error) Responder {
 //
 //	import (
 //	  "testing"
-//	  "github.com/jarcoal/httpmock"
+//	  "github.com/eucatur/httpmock"
 //	)
 //	...
 //	func TestMyApp(t *testing.T) {
@@ -494,8 +494,8 @@ func NewErrorResponder(err error) Responder {
 // Will abort the current test and print something like:
 //
 //	transport_test.go:735: Called from net/http.Get()
-//	      at /go/src/github.com/jarcoal/httpmock/transport_test.go:714
-//	    github.com/jarcoal/httpmock.TestCheckStackTracer()
+//	      at /go/src/github.com/eucatur/httpmock/transport_test.go:714
+//	    github.com/eucatur/httpmock.TestCheckStackTracer()
 //	      at /go/src/testing/testing.go:865
 //	    testing.tRunner()
 //	      at /go/src/runtime/asm_amd64.s:1337

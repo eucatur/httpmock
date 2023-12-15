@@ -17,8 +17,8 @@ import (
 
 	"github.com/maxatome/go-testdeep/td"
 
-	. "github.com/jarcoal/httpmock"
-	"github.com/jarcoal/httpmock/internal"
+	. "github.com/eucatur/httpmock"
+	"github.com/eucatur/httpmock/internal"
 )
 
 const testURL = "http://www.example.com/"

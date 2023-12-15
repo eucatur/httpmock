@@ -7,7 +7,7 @@ import (
 
 	"github.com/maxatome/go-testdeep/td"
 
-	"github.com/jarcoal/httpmock"
+	"github.com/eucatur/httpmock"
 )
 
 var _ json.Marshaler = httpmock.File("test.json")
