@@ -15,7 +15,7 @@ func TestErrorNoResponderFoundMistake(t *testing.T) {
 		Suggested: "BINGO",
 	}
 	td.Cmp(t, e.Error(), `no responder found for method "pipo", but one matches method "BINGO"`)
-	td.Cmp(t, e.Unwrap(), internal.NoResponderFound)
+	td.Cmp(t, e.Unwrap(), internal.ErrNoResponderFound)
 
 	e = &internal.ErrorNoResponderFoundMistake{
 		Kind:      "matcher",
@@ -23,5 +23,5 @@ func TestErrorNoResponderFoundMistake(t *testing.T) {
 		Suggested: "BINGO",
 	}
 	td.Cmp(t, e.Error(), `no responder found despite BINGO`)
-	td.Cmp(t, e.Unwrap(), internal.NoResponderFound)
+	td.Cmp(t, e.Unwrap(), internal.ErrNoResponderFound)
 }

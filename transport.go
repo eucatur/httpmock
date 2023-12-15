@@ -20,7 +20,7 @@ const regexpPrefix = "=~"
 
 // NoResponderFound is returned when no responders are found for a
 // given HTTP method and URL.
-var NoResponderFound = internal.NoResponderFound
+var NoResponderFound = internal.ErrNoResponderFound
 
 var stdMethods = map[string]bool{
 	"CONNECT": true, // Section 9.9
